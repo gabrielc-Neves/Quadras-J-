@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadras JÁ - Reserva de Quadras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Quadras JÁ</h1>
+        <nav>
+            <button id="logoutBtn" style="display:none;">Logout</button>
+        </nav>
+    </header>
+    <main>
+        <section id="loginSection">
+            <h2>Login</h2>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="senha" placeholder="Senha" required>
+            <button id="submitLogin">Entrar</button>
+            <p id="loginMessage"></p>
+        </section>
+
+        <section id="quadrasSection" style="display:none;">
+            <h2>Quadras Disponíveis</h2>
+            <ul id="quadrasList"></ul>
+        </section>
+
+        <section id="cadastroQuadraSection" style="display:none;">
+            <h2>Cadastrar Nova Quadra</h2>
+            <input type="text" id="quadraNome" placeholder="Nome da Quadra" required>
+            <input type="number" id="quadraCapacidade" placeholder="Capacidade" required>
+            <button id="submitQuadra">Cadastrar</button>
+            <p id="quadraMessage"></p>
+        </section>
+
+        <section id="reservasSection" style="display:none;">
+            <h2>Fazer uma Reserva</h2>
+            <select id="quadraSelect"></select>
+            <input type="date" id="dataReserva" required>
+            <input type="time" id="horaInicio" required>
+            <input type="time" id="horaFim" required>
+            <button id="submitReserva">Reservar</button>
+            <p id="reservaMessage"></p>
+
+            <h3>Minhas Reservas</h3>
+            <ul id="listaReservas"></ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
